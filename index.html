@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CECAM</title>
+  <style>
+    .navbar {
+      background: linear-gradient(rgba(0, 0, 0, 0.349), rgba(255, 255, 255, 0)), url('Principal.jpg');
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="Logo-Masferrer.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<button class="hamburger-btn" onclick="toggleDropdown()">
+  <img src="Menu.png" width="50px" />
+</button oncontextmenu="return false;">
+
+<nav class="nav-dropdown" id="navDropdown">
+  <a href="index.html">Inicio</a>
+  <a href="oferta.html">Oferta</a>
+  <a href="acerca-de.html">Acerca de</a>
+  <a href="instalaciones.html">Instalaciones</a>
+  <a href="calendario.html">Calendario</a>
+  <a href="requisitos.html">Requisitos</a>
+</nav>
+
+<script>
+  function toggleDropdown() {
+    const dropdown = document.getElementById('navDropdown');
+    dropdown.style.display = dropdown.style.display === 'flex' ? 'none' : 'flex';
+  }
+</script>
+
+
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="Logo-Masferrer.ico" alt="Logo de la Institución">
+    </a>
+    <div class="eslogan">
+      <img src="Eslogan.png" class="responsive-img">
+    </div>
+  </div>
+</nav>
+
+
+<section class="main-section">
+  <div class="container">
+    <div class="event">
+      <h2 class="heading">Noticias </h2>
+      <div class="loop-container">
+        <ul class="loop-content">
+          <li>📌 Nuevo laboratorio de ciencias inaugurado</li>
+          <li>💻 Taller de programación para estudiantes</li>
+          <li>🎓 Conferencia sobre innovación educativa</li>
+          <li>🏆 Participación destacada en Junior NBA</li>
+          <li>📌 Nuevo laboratorio de ciencias inaugurado</li>
+          <li>💻 Taller de programación para estudiantes</li>
+          <li>🎓 Conferencia sobre innovación educativa</li>
+          <li>🏆 Participación destacada en Junior NBA</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-us" id="acerca">
+  <div class="container">
+    <h2 class="heading">Información</h2>
+    <p> Somos una institución educativa pública con orientación católica, administrada por las Hermanas Dominicas de
+      la Anunciata, con más de 70 años de historia formando estudiantes en valores, excelencia académica y compromiso
+      social. Ubicada en Santa Tecla, El Salvador, la escuela acoge a más de 3,800 estudiantes, ofreciendo desde
+      educación Básica (1° Grado - 9° Grado) hasta Bachillerato General y Técnico.</p>
+    <div class="mission-vision">
+      <div class="card mission">
+        <center>
+          <h3>Misión</h3>
+        </center>
+        <p>Iluminar las tinieblas de la ignorancia con la sana doctrina, por medio del anuncio de la fe, fortaleciendo
+          los estándares, de calidad de la Comunidad Educativa</p>
+      </div>
+      <div class="card vision">
+        <center>
+          <h3>Visión</h3>
+        </center>
+        <p>Ser una Comunidad Educativa Cristiana Católica comprometida con la sociedad, formando integralmente a la
+          niñez y adolescencia</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="valores">
+  <div class="container">
+    <h2 class="heading">Nuestros Valores</h2>
+    <p>En nuestra institución educativa buscamos formar personas íntegras, fomentando el respeto hacia los demás, la
+      responsabilidad en cada acción y la autoestima como base para el crecimiento personal. Creemos que estos valores
+      son fundamentales para construir una comunidad solidaria, consciente y capaz de enfrentar los retos del futuro con
+      confianza y compromiso.</p>
+    <div class="mission-vision">
+      <div class="card respeto">
+        <p><b>RESPETO:</b>
+          Fomentamos un ambiente donde se reconoce y valora a cada persona, promoviendo la empatía, la aceptación de
+          las diferencias y la convivencia armoniosa.</p>
+      </div>
+      <div class="card responsabilidad">
+        <p><b>RESPONSABILIDAD:</b>
+          Formamos estudiantes conscientes y comprometidos, que cumplen con la fuerte carga académica que la escuela
+          requiere. Con el fin de prepararlos para un buen futuro.</p>
+      </div>
+      <div class="card autoestima">
+        <p><b>AUTOESTIMA:</b>
+          Impulsamos la confianza en uno mismo, motivando a cada alumno a descubrir su valor, amarse como es y crecer
+          con seguridad y optimismo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-us oferta" id="oferta">
+  <div class="container">
+    <h2 class="heading">Oferta Académica</h2>
+    <p>Nuestra Oferta Académica está diseñada para brindar una formación integral de calidad, que combina educación
+      básica, bachillerato general y técnico, con espacios e infraestructura modernos y adecuados para el aprendizaje,
+      la innovación y el desarrollo personal, artístico, tecnológico y deportivo.</p>
+    <div class="mission-vision">
+      <div class="card oferta 1">
+        <h3>Educación</h3>
+        <ul>
+          <li>Educación Básica (1º a 9º grado)</li>
+          <li>Bachillerato General</li>
+          <li>Bachillerato Técnico</li>
+        </ul>
+        <p>Complementado con formación religiosa, artística, deportiva y desarrollo tecnológico.</p>
+      </div>
+      <div class="card oferta 2">
+        <h3>Infraestructura</h3>
+        <ul>
+          <li>Edificios con aulas equipadas.</li>
+          <li>Biblioteca, laboratorios de ciencias, róbotica y CCH.</li>
+          <li>Canchas deportivas, ranchos, capilla, auditorium y jardines.</li>
+        </ul>
+      </div>
+      <div class="card oferta 3">
+        <h3>Deporte y Cultura</h3>
+        <p>Promovemos la participación en eventos como la Junior NBA, así como en actividades artísticas, informáticas y
+          religiosas. Fomentamos la disciplina, el trabajo en equipo y la creatividad, ofreciendo oportunidades para que
+          nuestros estudiantes se destaquen en diversas áreas y refuercen su desarrollo integral, practicando
+          principalmente basket y volley, y en ocasiones fútbol, para fortalecer la convivencia, la salud y el espíritu
+          deportivo.</p>
+      </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+  <div class="menu">
+    <a href="index.html">Inicio</a>
+    <a href="oferta.html">Oferta</a>
+    <a href="acerca-de.html">Acerca de</a>
+    <a href="instalaciones.html">Instalaciones</a>
+    <a href="calendario.html">Calendario</a>
+    <a href="requisitos.html">Requisitos</a>
+  </div>
+  <div class="contactos">
+    <a href="https://www.facebook.com/profile.php?id=100043685954290"><img src="logo-de-facebook.png" width="35px"></a>
+    <div class="separar"><a href="tel:+50322282514"><img src="llamada-telefonica.png" width="35px"></a>
+      <p>+503 2228 2514</p>
+    </div>
+  </div>
+  <div class="container">
+    <p>&copy; 2025 Centro Escolar Católico Alberto Masferrer. Todos los derechos reservados.</p>
+  </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+.slider img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    animation: slideFade 3s ease-in-out;
+}
+
+  <section class="slider">
+    <img src="masferrerbk.jpg" alt="Imagen del Slider">
+  </section>
+
+
+  rgba(7, 0, 109, 0.623), rgb(89, 88, 102))
