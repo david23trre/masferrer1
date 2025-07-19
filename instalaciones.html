@@ -2,20 +2,25 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Instalaciones</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="icon" href="Logo-Masferrer.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+    .navbar {
+      background: linear-gradient(rgba(0, 0, 0, 0.349), rgba(255, 255, 255, 0)), url('Instalaciones.jpg');
+    }
+    </style>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" href="Logo-Masferrer.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-<button class="hamburger-btn" onclick="toggleDropdown()">
-  <img src="Menu.png" width="50px"/>
-</button>
+  <button class="hamburger-btn" onclick="toggleDropdown()">
+    <img src="Menu.png" width="50px" />
+  </button>
 
   <nav class="nav-dropdown" id="navDropdown">
     <a href="index.html">Inicio</a>
@@ -28,67 +33,95 @@
 
   <script>
     function toggleDropdown() {
-      const dropdown = document.getElementById('navDropdown');
-      dropdown.style.display = dropdown.style.display === 'flex' ? 'none' : 'flex';
+      const dropdown = document.getElementById("navDropdown");
+      dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
     }
   </script>
 
-  <nav class="navbar">
-    <div class="container">
-      <a href="index.html" class="logo">
-        <img src="logo.jpg" alt="Logo de la Institución">
-      </a>
-      <div class="menu">
-        <a href="index.html">Inicio</a>
-        <a href="acerca-de.html">Acerca de</a>
-        <a href="oferta.html">Oferta</a>
-        <a href="instalaciones.html"></a><strong>Instalaciones</strong></a>
-        <a href="calendario.html">Calendario</a>
-        <a href="contacto.html">Contacto</a>
-      </div>
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="Logo-Masferrer.ico" alt="Logo de la Institución">
+    </a>
+    <div class="eslogan">
+      <img src="Eslogan.png" class="responsive-img">
     </div>
-  </nav>
+  </div>
+</nav>
 
   <section class="about-us">
     <div class="container">
-      <h2 class="heading">Instalaciones</h2>
-
-      <section class="gallery" id="galeria">
-        <div class="container">
-          <div class="gallery-images">
-            <img src="masfe2.jpg" alt="Imagen 1">
-            <img src="jardin.jpg" alt="Imagen 2">
-            <img src="pasillo.jpg" alt="Imagen 3">
-          </div>
-        </div>
-      </section>
-
-      <section class="gallery" id="galeria">
-        <div class="container">
-          <div class="gallery-images">
-            <img src="trofeos.jpg" alt="Imagen 1">
-            <img src="computo.jpg" alt="Imagen 2">
-            <img src="rancho.jpg" alt="Imagen 3">
-          </div>
-        </div>
-      </section>
-
-      <section class="gallery" id="galeria">
-        <div class="container">
-          <div class="gallery-images">
-            <img src="ranchos2.jpg" alt="Imagen 1">
-            <img src="cancha.jpg" alt="Imagen 2">
-            <img src="mapa.jpg" alt="Imagen 3">
-          </div>
-        </div>
-      </section>
+      <h2 class="heading">Galería</h2>
+<div class="gallery-images">
+  <img src="Galería Masferrer/Imagen 1.jpg" alt="Imagen 1" draggable="false" oncontextmenu="return false" />
+  <img src="Galería Masferrer/Imagen 2.jpg" alt="Imagen 2" draggable="false" oncontextmenu="return false" />
+  <img src="Galería Masferrer/Imagen 3.jpg" alt="Imagen 3" draggable="false" oncontextmenu="return false" />
+  <img src="Galería Masferrer/Imagen 4.jpg" alt="Imagen 4" draggable="false" oncontextmenu="return false" />
+  <img src="Galería Masferrer/Imagen 5.jpg" alt="Imagen 5" draggable="false" oncontextmenu="return false" />
+  <img src="Galería Masferrer/Imagen 6.jpg" alt="Imagen 6" draggable="false" oncontextmenu="return false" />
+  <img src="Galería Masferrer/Imagen 7.jpg" alt="Imagen 7" draggable="false" oncontextmenu="return false" />
+  <img src="Galería Masferrer/Imagen 8.jpg" alt="Imagen 8" draggable="false" oncontextmenu="return false" />
+  <img src="Galería Masferrer/Imagen 9.jpg" alt="Imagen 9" draggable="false" oncontextmenu="return false" />
+  <img src="Galería Masferrer/Imagen 10.jpg" alt="Imagen 10" draggable="false" oncontextmenu="return false" />
+  <img src="Galería Masferrer/Imagen 11.jpg" alt="Imagen 11" draggable="false" oncontextmenu="return false" />
+  <img src="Galería Masferrer/Imagen 12.jpg" alt="Imagen 12" draggable="false" oncontextmenu="return false" />
+  <img src="Galería Masferrer/Imagen 13.jpg" alt="Imagen 13" draggable="false" oncontextmenu="return false" />
+  <img src="Galería Masferrer/Imagen 14.jpg" alt="Imagen 14" draggable="false" oncontextmenu="return false" />
+  <img src="Galería Masferrer/Imagen 15.jpg" alt="Imagen 15" draggable="false" oncontextmenu="return false" />
+  <img src="Galería Masferrer/Imagen 16.jpg" alt="Imagen 16" draggable="false" oncontextmenu="return false" />
+  <img src="Galería Masferrer/Imagen 17.jpg" alt="Imagen 17" draggable="false" oncontextmenu="return false" />
+  <img src="Galería Masferrer/Imagen 18.jpg" alt="Imagen 18" draggable="false" oncontextmenu="return false" />
+  <img src="Galería Masferrer/Imagen 19.jpg" alt="Imagen 19" draggable="false" oncontextmenu="return false" />
+  <img src="Galería Masferrer/Imagen 20.jpg" alt="Imagen 20" draggable="false" oncontextmenu="return false" />
+</div>
     </div>
   </section>
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2024 Centro Escolar Católico Alberto Masferrer. Todos los derechos reservados.</p>
+
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="closeBtn" onclick="closeModal(); event.stopPropagation();">&times;</span>
+    <img id="modal-img" class="modal-content" alt="Imagen ampliada" draggable="false" oncontextmenu="return false" />
+  </div>
+
+<footer class="footer">
+  <div class="menu">
+    <a href="index.html">Inicio</a>
+    <a href="oferta.html">Oferta</a>
+    <a href="acerca-de.html">Acerca de</a>
+    <a href="instalaciones.html">Instalaciones</a>
+    <a href="calendario.html">Calendario</a>
+    <a href="requisitos.html">Requisitos</a>
+  </div>
+  <div class="contactos">
+    <a href="https://www.facebook.com/profile.php?id=100043685954290"><img src="logo-de-facebook.png" width="35px"></a>
+    <div class="separar"><a href="tel:+50322282514"><img src="llamada-telefonica.png" width="35px"></a>
+      <p>+503 2228 2514</p>
     </div>
-  </footer>
+  </div>
+  <div class="container">
+    <p>&copy; 2025 Centro Escolar Católico Alberto Masferrer. Todos los derechos reservados.</p>
+  </div>
+</footer>
+  <script>
+    function openModal(img) {
+      const modal = document.getElementById("modal");
+      const modalImg = document.getElementById("modal-img");
+      modal.style.display = "flex";
+      modalImg.src = img.src;
+    }
+
+    function closeModal() {
+      const modal = document.getElementById("modal");
+      modal.style.display = "none";
+    }
+
+    document.querySelectorAll(".gallery-images img").forEach((img) => {
+      img.addEventListener("click", () => {
+        if (window.innerWidth > 768) {
+          openModal(img);
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>

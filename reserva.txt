@@ -1,13 +1,560 @@
-.slider img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    animation: slideFade 3s ease-in-out;
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CECAM</title>
+  <style>
+    .navbar {
+      background: linear-gradient(rgba(0, 0, 0, 0.349), rgba(255, 255, 255, 0)), url('Principal.jpg');
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="Logo-Masferrer.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<button class="hamburger-btn" onclick="toggleDropdown()">
+  <img src="Menu.png" width="50px" />
+</button oncontextmenu="return false;">
+
+<nav class="nav-dropdown" id="navDropdown">
+  <a href="index.html">Inicio</a>
+  <a href="oferta.html">Oferta</a>
+  <a href="acerca-de.html">Acerca de</a>
+  <a href="instalaciones.html">Instalaciones</a>
+  <a href="calendario.html">Calendario</a>
+  <a href="requisitos.html">Requisitos</a>
+</nav>
+
+<script>
+  function toggleDropdown() {
+    const dropdown = document.getElementById('navDropdown');
+    dropdown.style.display = dropdown.style.display === 'flex' ? 'none' : 'flex';
+  }
+</script>
+
+
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="Logo-Masferrer.ico" alt="Logo de la Institución">
+    </a>
+    <div class="eslogan">
+      <img src="Eslogan.png" class="responsive-img">
+    </div>
+  </div>
+</nav>
+
+
+<section class="main-section">
+  <div class="container">
+    <div class="event">
+      <h2 class="heading">Noticias </h2>
+      <div class="loop-container">
+        <ul class="loop-content">
+          <li>📌 Nuevo laboratorio de ciencias inaugurado</li>
+          <li>💻 Taller de programación para estudiantes</li>
+          <li>🎓 Conferencia sobre innovación educativa</li>
+          <li>🏆 Participación destacada en Junior NBA</li>
+          <li>📌 Nuevo laboratorio de ciencias inaugurado</li>
+          <li>💻 Taller de programación para estudiantes</li>
+          <li>🎓 Conferencia sobre innovación educativa</li>
+          <li>🏆 Participación destacada en Junior NBA</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-us" id="acerca">
+  <div class="container">
+    <h2 class="heading">Información</h2>
+    <p class="justificado"> Somos una institución educativa pública con orientación católica, administrada por las Hermanas Dominicas de
+      la Anunciata, con más de 70 años de historia formando estudiantes en valores, excelencia académica y compromiso
+      social. Ubicada en Santa Tecla, El Salvador, la escuela acoge a más de 3,800 estudiantes, ofreciendo desde
+      educación Básica (1° Grado - 9° Grado) hasta Bachillerato General y Técnico.</p>
+    <div class="mission-vision">
+      <div class="card mission">
+        <center>
+          <h3>Misión</h3>
+        </center>
+        <p class="justificado">Iluminar las tinieblas de la ignorancia con la sana doctrina, por medio del anuncio de la fe, fortaleciendo
+          los estándares, de calidad de la Comunidad Educativa</p>
+      </div>
+      <div class="card vision">
+        <center>
+          <h3>Visión</h3>
+        </center>
+        <p class="justificado">Ser una Comunidad Educativa Cristiana Católica comprometida con la sociedad, formando integralmente a la
+          niñez y adolescencia</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="valores">
+  <div class="container">
+    <h2 class="heading">Nuestros Valores</h2>
+    <p class="justificado">En nuestra institución educativa buscamos formar personas íntegras, fomentando el respeto hacia los demás, la
+      responsabilidad en cada acción y la autoestima como base para el crecimiento personal. Creemos que estos valores
+      son fundamentales para construir una comunidad solidaria, consciente y capaz de enfrentar los retos del futuro con
+      confianza y compromiso.</p>
+    <div class="mission-vision">
+      <div class="card respeto">
+        <p class="justificado"><b>RESPETO:</b>
+          Fomentamos un ambiente donde se reconoce y valora a cada persona, promoviendo la empatía, la aceptación de
+          las diferencias y la convivencia armoniosa.</p>
+      </div>
+      <div class="card responsabilidad">
+        <p class="justificado"><b>RESPONSABILIDAD:</b>
+          Formamos estudiantes conscientes y comprometidos, que cumplen con la fuerte carga académica que la escuela
+          requiere. Con el fin de prepararlos para un buen futuro.</p>
+      </div>
+      <div class="card autoestima">
+        <p class="justificado"><b>AUTOESTIMA:</b>
+          Impulsamos la confianza en uno mismo, motivando a cada alumno a descubrir su valor, amarse como es y crecer
+          con seguridad y optimismo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-us oferta" id="oferta">
+  <div class="container">
+    <h2 class="heading">Oferta Académica</h2>
+    <p class="justificado">Nuestra Oferta Académica está diseñada para brindar una formación integral de calidad, que combina educación
+      básica, bachillerato general y técnico, con espacios e infraestructura modernos y adecuados para el aprendizaje,
+      la innovación y el desarrollo personal, artístico, tecnológico y deportivo.</p>
+    <div class="mission-vision">
+      <div class="card oferta 1">
+        <h3>Educación</h3>
+        <ul>
+          <li>Educación Básica (1º a 9º grado)</li>
+          <li>Bachillerato General</li>
+          <li>Bachillerato Técnico</li>
+        </ul>
+        <p>Complementado con formación religiosa, artística, deportiva y desarrollo tecnológico.</p>
+      </div>
+      <div class="card oferta 2">
+        <h3>Infraestructura</h3>
+        <ul>
+          <li>Edificios con aulas equipadas.</li>
+          <li>Biblioteca, laboratorios de ciencias, róbotica y CCH.</li>
+          <li>Canchas deportivas, ranchos, capilla, auditorium y jardines.</li>
+        </ul>
+      </div>
+      <div class="card oferta 3">
+        <h3>Deporte y Cultura</h3>
+        <p class="justificado">Promovemos la participación en eventos como la Junior NBA, así como en actividades artísticas, informáticas y
+          religiosas. Fomentamos la disciplina, el trabajo en equipo y la creatividad, ofreciendo oportunidades para que
+          nuestros estudiantes se destaquen en diversas áreas y refuercen su desarrollo integral, practicando
+          principalmente basket y volley, y en ocasiones fútbol, para fortalecer la convivencia, la salud y el espíritu
+          deportivo.</p>
+      </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+  <div class="menu">
+    <a href="index.html">Inicio</a>
+    <a href="oferta.html">Oferta</a>
+    <a href="acerca-de.html">Acerca de</a>
+    <a href="instalaciones.html">Instalaciones</a>
+    <a href="calendario.html">Calendario</a>
+    <a href="requisitos.html">Requisitos</a>
+  </div>
+  <div class="contactos">
+    <a href="https://www.facebook.com/profile.php?id=100043685954290"><img src="logo-de-facebook.png" width="35px"></a>
+    <div class="separar"><a href="tel:+50322282514"><img src="llamada-telefonica.png" width="35px"></a>
+      <p>+503 2228 2514</p>
+    </div>
+  </div>
+  <div class="container">
+    <p>&copy; 2025 Centro Escolar Católico Alberto Masferrer. Todos los derechos reservados.</p>
+  </div>
+</footer>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-  <section class="slider">
-    <img src="masferrerbk.jpg" alt="Imagen del Slider">
-  </section>
+    .justificado {
+      text-align: justify;
+    }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #e8ffe8;
+  color: #222;
+  line-height: 1.6;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.responsive-img {
+  width: 50%;
+}
 
 
-  rgba(7, 0, 109, 0.623), rgb(89, 88, 102))
+@media (max-width: 768px) {
+  .responsive-img {
+    width: 100%;
+  }
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.hamburger-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1a9202;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hamburger-btn span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+
+.nav-dropdown {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: #00000076;
+  border-radius: 8px;
+  padding: 10px 0;
+  width: 180px;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.nav-dropdown a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.nav-dropdown a:hover {
+  background-color: #6c8b64;
+}
+
+
+.navbar {
+  position: relative;
+  height: 650px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  color: #ffffff;
+  padding: 18px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-bottom: 3px solid #108d00;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 500px;
+  }
+}
+
+.navbar .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.eslogan {
+  padding-bottom: 10px;
+  pointer-events: none;
+}
+
+.menu {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.menu a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+  margin-bottom: 25px;
+}
+
+.menu a:hover::after {
+  width: 100%;
+  background-color: #00ffc8;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #035a00;
+  transition: width 0.3s ease;
+}
+
+.logo img {
+  height: 80px;
+  border-radius: 100%;
+  background-color: rgb(249, 255, 233);
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin-right: 20px;
+}
+
+
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.heading {
+  font-size: 28px;
+  color: #010038;
+  text-align: center;
+  margin: 30px 0 10px;
+  position: relative;
+}
+
+.heading::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: #e9cb9e;
+  display: block;
+  margin: 10px auto 0;
+}
+
+.about-us,
+.gallery,
+.main-section,
+.oferta {
+  padding: 40px 0;
+}
+
+.about-us ul,
+.oferta ul {
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+li::marker {
+  color: #ffefd1;
+}
+
+.loop-container {
+  height: 80px;
+  overflow: hidden;
+  position: relative;
+  background: #edfff1;
+  border-left: 4px solid #a76400c4;
+  padding-left: 10px;
+  border-radius: 8px;
+}
+
+.loop-content {
+  display: flex;
+  flex-direction: column;
+  animation: infiniteScroll 12s linear infinite;
+}
+
+.loop-content li {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #002244;
+  list-style: none;
+  padding-left: 8px;
+}
+
+li::marker {
+  color: #0b8a00;
+}
+
+@keyframes infiniteScroll {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.gallery-images img {
+  width: 30%;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+}
+
+.gallery-images img:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+#contacto p strong {
+  color: #002244;
+}
+
+.footer {
+  background-color: #00000076;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+.mission-vision {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.mission-vision .card {
+  flex: 1 1 350px;
+  padding: 25px;
+  background-color: #edfff1;
+  border-left: 6px solid #a76400c4;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.mission-vision .card:hover {
+  transform: translateY(-5px);
+}
+
+.mission-vision h3 {
+  color: #002244;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.mission-vision p {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.contactos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.contactos a img:hover {
+  transform: scale(1.1);
+}
+
+.separar {
+  display: flex;
+  gap: 7px;
+}
+
+.separar p {
+  padding-top: 5px;
+}
+
+.main-section,
+.valores{
+  background-color: #e3fce1;
+}

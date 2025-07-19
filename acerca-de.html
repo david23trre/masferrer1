@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="Logo-Masferrer.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<button class="hamburger-btn" onclick="toggleDropdown()">
+  <img src="Menu.png" width="50px"/>
+</button>
+
+  <nav class="nav-dropdown" id="navDropdown">
+    <a href="index.html">Inicio</a>
+    <a href="oferta.html">Oferta</a>
+    <a href="acerca-de.html">Acerca de</a>
+    <a href="instalaciones.html">Instalaciones</a>
+    <a href="calendario.html">Calendario</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <script>
+    function toggleDropdown() {
+      const dropdown = document.getElementById('navDropdown');
+      dropdown.style.display = dropdown.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
+
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="logo.jpg" alt="Logo de la Institución">
+            </a>
+            <div class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="acerca-de.html"><strong>Acerca de</strong></a>
+                <a href="oferta.html">Oferta</a>
+                <a href="instalaciones.html">Instalaciones</a>
+                <a href="calendario.html">Calendario</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+      <section class="about-us oferta" id="oferta">
+    <div class="container">
+      <h2 class="heading">Oferta Académica</h2>
+      <ul>
+        <li>Educación Básica (1º a 9º grado)</li>
+        <li>Bachillerato General</li>
+        <li>Bachillerato Técnico</li>
+      </ul>
+      <p>Complementado con formación religiosa, artística, deportiva y desarrollo tecnológico.</p>
+      <h3>Infraestructura</h3>
+      <ul>
+        <li>Edificios con aulas equipadas.</li>
+        <li>Biblioteca, laboratorios de ciencias, róbotica y CCH.</li>
+        <li>Canchas deportivas, capilla, auditorium y jardines.</li>
+      </ul>
+      <h3>Deporte y Cultura</h3>
+      <p>Participación destacada en Junior NBA, actividades artísticas y religiosas.</p>
+    </div>
+  </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Centro Escolar Católico Alberto Masferrer. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

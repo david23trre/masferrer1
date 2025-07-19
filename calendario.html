@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendario</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="Logo-Masferrer.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<button class="hamburger-btn" onclick="toggleDropdown()">
+  <img src="Menu.png" width="50px"/>
+</button>
+
+  <nav class="nav-dropdown" id="navDropdown">
+    <a href="index.html">Inicio</a>
+    <a href="oferta.html">Oferta</a>
+    <a href="acerca-de.html">Acerca de</a>
+    <a href="instalaciones.html">Instalaciones</a>
+    <a href="calendario.html">Calendario</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <script>
+    function toggleDropdown() {
+      const dropdown = document.getElementById('navDropdown');
+      dropdown.style.display = dropdown.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="logo.jpg" alt="Logo de la Institución">
+      </a>
+      <div class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="acerca-de.html">Acerca de</a>
+        <a href="oferta.html">Oferta</a>
+        <a href="instalaciones.html">Instalaciones</a>
+        <a href="calendario.html"><strong>Calendario</strong></a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="about-us">
+    <div class="container">
+      <h2 class="heading">📅 Calendario Escolar 2024</h2>
+
+      <h3>Junio</h3>
+      <ul>
+        <li>2 al 6 - Segunda Actividad Interperiodo II Bachillerato</li>
+        <li>8 - Programa de Educación Familiar para I Ciclo mañana y tarde</li>
+        <li>9 y 10 - Exámenes de materias complementarias Segundo Periodo Bachillerato</li>
+        <li>11 al 13 - Exámenes de materias básicas Segundo Periodo Bachillerato</li>
+        <li>15 - Programa de Educación Familiar para II ciclo, mañana y tarde</li>
+        <li>16 - Celebración Día del Padre</li>
+        <li>16 al 18 - Recuperación Segundo Periodo Bachillerato</li>
+        <li>19 - Inicio Tercer Periodo Bachillerato</li>
+        <li>20 - Celebración Día del Maestro</li>
+        <li>23 al 27 - Actividad Cotidiana Segundo Trimestre del nivel de Básica</li>
+        <li>28 - Sacramento de Primera Comunión</li>
+        <li>29 - Programa de Educación Familiar para III ciclo mañana y tarde</li>
+      </ul>
+
+      <h3>Julio</h3>
+      <ul>
+        <li>1 al 4 - Semana de Logros materias complementarias</li>
+        <li>5 - Entrega de Notas Segundo Periodo Bachillerato</li>
+        <li>11 al 18 - Programa de Educación Familiar para Bachillerato</li>
+        <li>15 - Primera Actividad del Interperiodo III de Bachillerato</li>
+        <li>21 al 23 - Aplicación Exámenes de materias especiales Segundo Trimestre del nivel de Básica</li>
+        <li>24 al 25 - Aplicación Exámenes de materias básicas Segundo Trimestre del nivel de Básica</li>
+        <li>25 y 26 - Recuperación del Segundo Trimestre de Básica</li>
+        <li>30 - Día de la Confirmación</li>
+        <li>31 - Simulacro</li>
+      </ul>
+
+      <h3>Agosto</h3>
+      <ul>
+        <li>1 al 6 - Vacaciones Agostinas</li>
+        <li>7 - Regreso a clases</li>
+        <li>7 al 11 - Segunda Actividad Interperiodo III de Bachillerato</li>
+        <li>12 al 14 - Semana Vocacional</li>
+        <li>15 - Celebración de fundación de Congregación Dominicas de la Anunciata</li>
+        <li>16 - Entrega boletas Segundo Trimestre a los Padres de Familia del nivel de Básica</li>
+        <li>18 y 19 - Exámenes de materias complementarias Tercer Periodo de Bachillerato</li>
+        <li>20 al 22 - Exámenes de materias básicas Tercer Periodo de Bachillerato</li>
+        <li>23 - Recuperación Tercer Periodo Bachillerato</li>
+        <li>27 - Inicio Cuarto Periodo Bachillerato</li>
+        <li>27 al 29 - Actividad Integradora Tercer Trimestre del nivel de Básica</li>
+        <li>30 - Entrega Resultados Tercer Periodo a Padres de familia Bachillerato</li>
+        <li>31 - Asamblea de Maestros Laicos</li>
+        <li>Todo el mes - Venta de solicitudes para Nuevo Ingreso</li>
+      </ul>
+
+      <h3>Septiembre</h3>
+      <ul>
+        <li>8 al 12 - Actos Semana Cívica</li>
+        <li>10 al 12 - Primera Actividad Interperiodo IV de Bachillerato</li>
+        <li>15 - Día de Independencia (asueto)</li>
+        <li>24 al 26 - Actividad Cotidiana Tercer Trimestre Básica</li>
+        <li>26-27 - Curso de nuevo ingreso</li>
+        <li>30 - Cierre del Mes Cívico</li>
+        <li>30 - Simulacro</li>
+      </ul>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Centro Escolar Católico Alberto Masferrer. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
