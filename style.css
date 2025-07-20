@@ -79,11 +79,11 @@ body {
   padding: 10px 20px;
   text-decoration: none;
   display: block;
-  transition: background-color 0.3s;
+  transition: background-color 0.2s;
 }
 
 .nav-dropdown a:hover {
-  background-color: #6c8b64;
+  background-color: #72ad63;
 }
 
 .navbar {
@@ -114,9 +114,9 @@ body {
 .logo img {
   height: 80px;
   border-radius: 100%;
-  background-color: rgb(249, 255, 233);
+  background-color: rgb(255, 255, 255);
   padding: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   margin-right: 20px;
 }
 
@@ -199,7 +199,7 @@ li::marker {
 .loop-content {
   display: flex;
   flex-direction: column;
-  animation: infiniteScroll 12s linear infinite;
+  animation: infiniteScroll 6s linear infinite;
 }
 
 .loop-content li {
@@ -379,3 +379,23 @@ body.modal-open {
   background-color: #e3fce1;
 }
 
+.ubicacion {
+  padding: 20px;
+  text-align: center;
+}
+
+.mapa {
+  margin-top: 10px;
+  border-radius: 12px;
+  border: 4px solid #a76400c4;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.historia{
+  background-color: #e3fce1;
+}
+
+.ubicacion{
+  background-color: #e8ffe8;
+}
